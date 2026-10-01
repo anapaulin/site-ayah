@@ -29,6 +29,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -544,23 +545,23 @@ button {
 ===================================================== */
 
 .projects {
-    background: var(--cream);
+  background: var(--cream);
 }
 
 /* CABEÇALHO DOS PROJETOS */
 .projects-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 60px;
-    margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 60px;
+  margin-bottom: 70px;
 }
 
 .projects-head > p {
-    max-width: 320px;
-    color: #65615a;
-    font-size: 13px;
-    line-height: 1.8;
+  max-width: 320px;
+  color: #65615a;
+  font-size: 13px;
+  line-height: 1.8;
 }
 
 
@@ -569,24 +570,19 @@ button {
 ===================================================== */
 
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 50px 30px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 50px 30px;
 }
-
-
-/* =====================================================
-   PROJETOS
-===================================================== */
 
 /* Todos os projetos terão o mesmo tamanho */
 .project {
-    width: 100%;
+  width: 100%;
 }
 
 /* Remove o projeto grande */
 .project-large {
-    grid-row: auto;
+  grid-row: auto;
 }
 
 
@@ -595,15 +591,21 @@ button {
 ===================================================== */
 
 .project-art {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 4 / 3;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    overflow: cover;
+  overflow: hidden;
+}
+
+.project-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
@@ -615,34 +617,9 @@ button {
 .art-two,
 .art-three,
 .art-four {
-    background: var(--cream);
-    color: var(--black);
-  }
-
-/* =====================================================
-   IMAGENS DOS PROJETOS
-===================================================== */
-
-.project-art {
-    width: 100%;
-    aspect-ratio: 3 / 4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  background: var(--cream);
+  color: var(--black);
 }
-
-.project-art img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Se quiser que a imagem preencha tudo,
-   sem deixar espaços, use:
-   
-   object-fit: cover;
-*/
 
 
 /* =====================================================
@@ -650,26 +627,26 @@ button {
 ===================================================== */
 
 .project-art span {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 
-    font-size: clamp(45px, 7vw, 100px);
-    font-weight: 800;
+  font-size: clamp(45px, 7vw, 100px);
+  font-weight: 800;
 
-    line-height: 0.85;
-    letter-spacing: -5px;
+  line-height: 0.85;
+  letter-spacing: -5px;
 
-    text-align: center;
+  text-align: center;
 }
 
 .art-two span {
-    font-family: Georgia, serif;
-    font-weight: 400;
-    letter-spacing: -3px;
+  font-family: Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -3px;
 }
 
 .art-three span {
-    font-size: clamp(50px, 6vw, 85px);
+  font-size: clamp(50px, 6vw, 85px);
 }
 
 
@@ -678,129 +655,44 @@ button {
 ===================================================== */
 
 .project-info {
-    padding: 20px 0;
+  padding: 20px 0;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 
-    border-bottom: 1px solid rgba(19, 19, 19, 0.25);
+  border-bottom: 1px solid rgba(19, 19, 19, 0.25);
 
-    gap: 20px;
+  gap: 20px;
 }
 
 .project-info h3 {
-    margin: 0 0 6px 0;
+  margin: 0 0 6px 0;
 
-    font-size: 15px;
-    font-weight: 700;
+  font-size: 15px;
+  font-weight: 700;
 }
 
 .project-info p {
-    margin: 0;
+  margin: 0;
 
-    color: #77736c;
+  color: #77736c;
 
-    font-size: 10px;
+  font-size: 10px;
 
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .project-info > span {
-    color: var(--red);
+  color: var(--red);
 
-    font-size: 11px;
-    font-weight: 700;
+  font-size: 11px;
+  font-weight: 700;
 
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
-
-/* =====================================================
-   RESPONSIVO — TABLET
-===================================================== */
-
-@media (max-width: 900px) {
-
-    .projects-head {
-        gap: 30px;
-        margin-bottom: 50px;
-    }
-
-    .project-grid {
-        gap: 40px 20px;
-    }
-
-    .project-art {
-        aspect-ratio: 4 / 3;
-    }
-
-}
-
-
-/* =====================================================
-   RESPONSIVO — CELULAR
-===================================================== */
-
-@media (max-width: 650px) {
-
-    .projects-head {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-        margin-bottom: 40px;
-    }
-
-    .projects-head > p {
-        max-width: 100%;
-    }
-
-    /* No celular fica uma imagem por linha */
-    .project-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .project-art {
-        aspect-ratio: 4 / 3;
-    }
-
-    .project-art::before {
-        inset: 12px;
-    }
-
-    .project-art span {
-        font-size: clamp(40px, 15vw, 75px);
-    }
-
-    .project-info {
-        padding: 16px 0;
-    }
-
-}
-
-
-/* =====================================================
-   CELULAR PEQUENO
-===================================================== */
-
-@media (max-width: 400px) {
-
-    .project-grid {
-        gap: 30px;
-    }
-
-    .project-art {
-        aspect-ratio: 1 / 1;
-    }
-
-    .project-info {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-}
 
 /* =====================================================
    MANIFESTO
@@ -823,27 +715,25 @@ button {
 }
 
 .manifesto-mark {
-    width: 110px;
-    height: 110px;
+  width: 110px;
+  height: 110px;
 
-    margin-bottom: 45px;
+  margin-bottom: 45px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .manifesto-mark img {
-    width:500px;
-    height:500px;
+  width: 500px;
+  height: 500px;
 
-    object-fit: contain;
-    display: block;
+  object-fit: contain;
+  display: block;
 }
-
 
 .manifesto .eyebrow {
   color: var(--cream);
@@ -1046,7 +936,7 @@ footer p:last-child {
 
   .projects-head {
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
   }
 
   .project-grid {
@@ -1055,10 +945,6 @@ footer p:last-child {
 
   .project-large {
     grid-row: auto;
-  }
-
-  .project-large .project-art {
-    min-height: 550px;
   }
 
   footer {
@@ -1078,32 +964,38 @@ footer p:last-child {
 @media (max-width: 650px) {
 
   :root {
-    --section-padding: 90px 6vw;
+    --section-padding: 80px 6vw;
   }
 
+  /* HEADER */
   .header {
-    height: 75px;
+    height: 80px;
+  }
+
+  .logo img {
+    width: 90px;
+  }
+
+  .menu-btn {
+    display: block;
+    font-size: 32px;
+    padding: 8px;
+    color: var(--black);
   }
 
   .nav {
     position: fixed;
-
-    top: 75px;
+    top: 80px;
     left: 0;
-
     width: 100%;
-
-    padding: 30px;
-
+    padding: 30px 6vw 40px;
     background: var(--black);
     color: var(--cream);
-
     flex-direction: column;
     align-items: flex-start;
-
+    gap: 26px;
     transform: translateY(-150%);
     opacity: 0;
-
     transition: 0.4s ease;
   }
 
@@ -1113,107 +1005,225 @@ footer p:last-child {
   }
 
   .nav a {
-    font-size: 13px;
+    font-size: 16px;
   }
 
-  .menu-btn {
-    display: block;
-  }
-
+  /* HERO — foto passa para baixo do texto */
   .hero {
-    min-height: 100vh;
-
-    padding-top: 130px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    padding: 130px 6vw 70px;
   }
 
   .hero h1 {
-    font-size: clamp(55px, 16vw, 90px);
-    letter-spacing: -4px;
+    font-size: clamp(56px, 17vw, 90px);
+    letter-spacing: -0.05em;
+    line-height: 0.9;
+  }
+
+  .eyebrow {
+    font-size: 13px;
   }
 
   .hero-text {
-    font-size: 14px;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 100%;
   }
 
   .hero-actions {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 20px 25px;
+    min-height: 56px;
   }
 
   .hero-symbol {
-    width: 280px;
-    height: 280px;
-
-    right: -120px;
-    top: 70%;
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: min(82vw, 380px);
+    height: min(82vw, 380px);
+    opacity: 1;
+    align-self: center;
+    animation: heroIn 1s ease forwards;
   }
 
   .scroll {
     display: none;
   }
 
+  /* STATEMENT */
   .statement {
-    padding: 100px 6vw;
+    padding: 90px 6vw;
+  }
+
+  .statement p {
+    font-size: 12px;
   }
 
   .statement h2 {
-    font-size: 38px;
-    letter-spacing: -2px;
+    font-size: clamp(36px, 10vw, 52px);
+    letter-spacing: -0.04em;
+    line-height: 1.05;
   }
 
+  /* SEÇÕES */
   .section-label {
-    margin-bottom: 50px;
+    font-size: 12px;
+    margin-bottom: 40px;
   }
 
   .about h2,
   .services h2,
   .projects h2,
   .contact h2 {
-    font-size: 45px;
-    letter-spacing: -3px;
+    font-size: clamp(42px, 12vw, 58px);
+    letter-spacing: -0.04em;
   }
 
-  .service {
-    grid-template-columns: 45px 1fr 25px;
-    gap: 10px;
+  .about-copy p {
+    font-size: 17px;
+    line-height: 1.75;
+  }
 
-    padding: 30px 0;
+  /* SERVIÇOS */
+  .service {
+    grid-template-columns: 40px 1fr 25px;
+    gap: 12px;
+    padding: 28px 0;
+  }
+
+  .service > span {
+    font-size: 13px;
   }
 
   .service h3 {
-    font-size: 19px;
+    font-size: 22px;
   }
 
   .service p {
-    font-size: 12px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* PROJETOS */
+  .projects-head > p {
+    font-size: 15px;
+    max-width: 100%;
   }
 
   .project-art,
   .project-large .project-art {
-    min-height: 400px;
+    min-height: 0;
+    aspect-ratio: auto;
+  }
+
+  .project-art img {
+    height: auto;
+    object-fit: contain;
   }
 
   .project-art span {
     font-size: 60px;
   }
 
+  .project-info h3 {
+    font-size: 18px;
+  }
+
+  .project-info p {
+    font-size: 12px;
+  }
+
+  .project-info > span {
+    font-size: 13px;
+  }
+
+  /* MANIFESTO */
   .manifesto {
-    min-height: 80vh;
-    padding: 100px 6vw;
+    min-height: auto;
+    padding: 90px 6vw;
+  }
+
+  .manifesto-mark {
+    width: 140px;
+    height: 140px;
+  }
+
+  .manifesto-mark img {
+    width: 100%;
+    height: 100%;
   }
 
   .manifesto h2 {
-    font-size: 48px;
-    letter-spacing: -3px;
+    font-size: clamp(42px, 12vw, 58px);
+    letter-spacing: -0.04em;
   }
 
+  .manifesto-text {
+    font-size: 16px;
+  }
+
+  /* CONTATO */
+  .contact-text {
+    font-size: 16px;
+  }
+
+  .contact-card a {
+    font-size: 17px;
+    padding: 24px 0;
+  }
+
+  .phones {
+    font-size: 15px;
+  }
+
+  /* FOOTER */
   footer {
     grid-template-columns: 1fr;
     padding: 50px 6vw;
   }
 
+  footer p {
+    font-size: 13px;
+  }
+
   footer p:last-child {
     text-align: left;
+  }
+
+  /* WHATSAPP */
+  .whatsapp-container {
+    right: 18px;
+    bottom: 18px;
+  }
+
+  .whatsapp-btn {
+    width: 64px;
+    height: 64px;
+  }
+
+  .whatsapp-options {
+    width: min(260px, 80vw);
+    bottom: 78px;
+  }
+
+  .whatsapp-options p {
+    font-size: 14px;
+  }
+
+  .whatsapp-options a {
+    font-size: 15px;
+    padding: 14px 0;
   }
 }
 
@@ -1230,6 +1240,7 @@ img {
 section {
   scroll-margin-top: 80px;
 }
+
 
 /* =========================
    WHATSAPP FLUTUANTE
