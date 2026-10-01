@@ -1334,16 +1334,55 @@ section {
 
 
 /* =====================================================
-   SETAS — evita que o celular transforme em emoji
+   SETAS — feitas em CSS para não virar emoji no celular
 ===================================================== */
 
-.service b,
-.contact-card a span,
-.btn span,
-.header-cta span,
-.whatsapp-options a span {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-variant-emoji: text;
-  font-style: normal;
-  line-height: 1;
+.arrow {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+/* Seta dos serviços */
+.service .arrow {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.3s ease;
+}
+
+.service:hover .arrow {
+  transform: rotate(45deg);
+}
+
+/* Seta dos contatos */
+.contact-card a .arrow {
+  width: 11px;
+  height: 11px;
+  transition: transform 0.3s ease;
+}
+
+.contact-card a:hover .arrow {
+  transform: rotate(45deg);
+}
+
+/* Seta do botão */
+.btn .arrow {
+  width: 10px;
+  height: 10px;
+}
+
+/* Seta para baixo do SCROLL */
+.arrow-down {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg);
+  margin-left: 4px;
+  vertical-align: 2px;
 }

@@ -4,21 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Ayah — Agência de Propaganda e Publicidade</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
   <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
 
+  <!-- HEADER -->
   <header class="header">
 
     <a href="#inicio" class="logo">
-      <img src="IMAGENS/img-logovermelha-ayah.png">
+      <img src="IMAGENS/img-logovermelha-ayah.png" alt="Ayah">
     </a>
 
     <nav class="nav" id="nav">
@@ -33,7 +39,7 @@
       Vamos criar
     </a>
 
-    <button class="menu-btn" id="menuBtn">
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">
       ☰
     </button>
 
@@ -43,7 +49,6 @@
   <main>
 
     <!-- HERO -->
-
     <section class="hero" id="inicio">
 
       <div class="hero-grid"></div>
@@ -67,7 +72,8 @@
         <div class="hero-actions">
 
           <a href="#projetos" class="btn btn-primary">
-            Ver projetos <span>↗</span>
+            Ver projetos
+            <span class="arrow"></span>
           </a>
 
           <a href="#sobre" class="btn btn-outline">
@@ -84,14 +90,14 @@
       </div>
 
       <div class="scroll">
-        SCROLL ↓
+        SCROLL
+        <span class="arrow-down"></span>
       </div>
 
     </section>
 
 
     <!-- FRASE -->
-
     <section class="statement">
 
       <p>
@@ -107,7 +113,6 @@
 
 
     <!-- SOBRE -->
-
     <section class="about section" id="sobre">
 
       <div class="section-label">
@@ -152,7 +157,6 @@
 
 
     <!-- SERVIÇOS -->
-
     <section class="services section" id="servicos">
 
       <div class="section-label">
@@ -175,7 +179,6 @@
 
       <div class="service-list">
 
-
         <article class="service">
 
           <span>01</span>
@@ -192,7 +195,7 @@
 
           </div>
 
-          <b>↗</b>
+          <b class="arrow"></b>
 
         </article>
 
@@ -213,7 +216,7 @@
 
           </div>
 
-          <b>↗</b>
+          <b class="arrow"></b>
 
         </article>
 
@@ -235,7 +238,7 @@
 
           </div>
 
-          <b>↗</b>
+          <b class="arrow"></b>
 
         </article>
 
@@ -256,10 +259,9 @@
 
           </div>
 
-          <b>↗</b>
+          <b class="arrow"></b>
 
         </article>
-
 
       </div>
 
@@ -267,7 +269,6 @@
 
 
     <!-- PROJETOS -->
-
     <section class="projects section" id="projetos">
 
       <div class="section-label">
@@ -290,7 +291,6 @@
 
         </div>
 
-
         <p>
           Uma seleção de projetos para mostrar diferentes possibilidades
           de criação.
@@ -305,9 +305,15 @@
         <article class="project project-large">
 
           <div class="project-art art-one">
+
             <span>
-               <img src="IMAGENS/POSTER-02.png" alt="Ayah — Social Media: post de produto" loading="lazy">
+              <img
+                src="IMAGENS/POSTER-02.png"
+                alt="Ayah — Social Media: post de produto"
+                loading="lazy"
+              >
             </span>
+
           </div>
 
           <div class="project-info">
@@ -315,11 +321,12 @@
             <div>
 
               <h3>
-                Ayah — Socia Media
+                Ayah — Social Media
               </h3>
 
               <p>
-                Conteúdo estratégico que transforma produtos em desejos e fortalece a presença difital da marca.
+                Conteúdo estratégico que transforma produtos em desejos e
+                fortalece a presença digital da marca.
               </p>
 
             </div>
@@ -338,7 +345,11 @@
           <div class="project-art art-two">
 
             <span>
-              <img src="IMAGENS/STORY3.png" alt="Ayah — Social Media: story de divulgação musical" loading="lazy">
+              <img
+                src="IMAGENS/STORY3.png"
+                alt="Ayah — Social Media: story de divulgação musical"
+                loading="lazy"
+              >
             </span>
 
           </div>
@@ -348,11 +359,12 @@
             <div>
 
               <h3>
-               Ayah - Social Media
+                Ayah — Social Media
               </h3>
 
               <p>
-                Divulgação estratégica que transforma uma atração musical em expectativa e conexão com o público.
+                Divulgação estratégica que transforma uma atração musical
+                em expectativa e conexão com o público.
               </p>
 
             </div>
@@ -371,7 +383,11 @@
           <div class="project-art art-three">
 
             <span>
-              <img src="IMAGENS/poster filme.jpg" alt="Ayah — Design Gráfico: pôster de curta-metragem" loading="lazy">
+              <img
+                src="IMAGENS/poster filme.jpg"
+                alt="Ayah — Design Gráfico: pôster de curta-metragem"
+                loading="lazy"
+              >
             </span>
 
           </div>
@@ -381,11 +397,12 @@
             <div>
 
               <h3>
-                Ayah - Design Gráfico
+                Ayah — Design Gráfico
               </h3>
 
               <p>
-                Uma composição visual que traduz a essência do curta-metragem e tranforma sua narrativa em uma composição visual envolvente.
+                Uma composição visual que traduz a essência do curta-metragem
+                e transforma sua narrativa em uma composição visual envolvente.
               </p>
 
             </div>
@@ -404,7 +421,11 @@
           <div class="project-art art-four">
 
             <span>
-              <img src="IMAGENS/REVISTA- ANA PAULIN.png" alt="Ayah — Design Gráfico: capa de revista" loading="lazy">
+              <img
+                src="IMAGENS/REVISTA- ANA PAULIN.png"
+                alt="Ayah — Design Gráfico: capa de revista"
+                loading="lazy"
+              >
             </span>
 
           </div>
@@ -414,11 +435,12 @@
             <div>
 
               <h3>
-                Ayah - Design Gráfico
+                Ayah — Design Gráfico
               </h3>
 
               <p>
-                Composição editoral que une montagem e tratamento de imagem para criar uma capa sofisticada, equilibrada e visualmete marcante.
+                Composição editorial que une montagem e tratamento de imagem
+                para criar uma capa sofisticada, equilibrada e visualmente marcante.
               </p>
 
             </div>
@@ -438,11 +460,10 @@
 
 
     <!-- MANIFESTO -->
-
     <section class="manifesto">
 
       <div class="manifesto-mark">
-        <img src="IMAGENS/logo-branca off.png">
+        <img src="IMAGENS/logo-branca off.png" alt="Logo Ayah">
       </div>
 
       <p class="eyebrow">
@@ -455,17 +476,14 @@
       </h2>
 
       <p class="manifesto-text">
-
         É ter algo para dizer. É criar conexão. É deixar uma marca.
         E é isso que fazemos: damos vida às ideias para que elas possam ir além.
-
       </p>
 
     </section>
 
 
     <!-- CONTATO -->
-
     <section class="contact section" id="contato">
 
       <div class="section-label">
@@ -487,10 +505,8 @@
           </h2>
 
           <p class="contact-text">
-
             Conte um pouco sobre o seu projeto e vamos transformar
             essa ideia em algo que faça sentido para sua marca.
-
           </p>
 
         </div>
@@ -502,19 +518,22 @@
 
             ayahagencia@gmail.com
 
-            <span>↗</span>
+            <span class="arrow"></span>
 
           </a>
 
 
-          <a href="https://instagram.com/ayahagencia" target="_blank">
+          <a
+            href="https://instagram.com/ayahagencia"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
 
             @ayahagencia
 
-            <span>↗</span>
+            <span class="arrow"></span>
 
           </a>
-
 
         </div>
 
@@ -526,13 +545,16 @@
 
 
   <!-- RODAPÉ -->
-
   <footer>
 
     <a href="#inicio" class="logo">
-      <img src="IMAGENS/logo-branca off.png" alt="Ayah Agência">
-    </a>
 
+      <img
+        src="IMAGENS/logo-branca off.png"
+        alt="Ayah Agência"
+      >
+
+    </a>
 
     <p>
       © <span id="year"></span> Ayah.
@@ -541,33 +563,64 @@
 
   </footer>
 
+
   <!-- WHATSAPP -->
   <div class="whatsapp-container">
 
-    <button class="whatsapp-btn" id="whatsappBtn" aria-label="Falar pelo WhatsApp">
-      <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true">
+    <button
+      class="whatsapp-btn"
+      id="whatsappBtn"
+      aria-label="Falar pelo WhatsApp"
+    >
+
+      <svg
+        viewBox="0 0 32 32"
+        width="28"
+        height="28"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+
         <path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.385.696 4.61 1.897 6.484L4 29l7.716-1.862A11.94 11.94 0 0 0 16.001 27C22.629 27 28 21.627 28 15S22.629 3 16.001 3zm0 21.818a9.77 9.77 0 0 1-4.978-1.362l-.357-.213-4.583 1.106 1.127-4.464-.232-.366A9.77 9.77 0 0 1 6.182 15c0-5.42 4.4-9.818 9.819-9.818S25.818 9.58 25.818 15 21.42 24.818 16.001 24.818zm5.406-7.34c-.296-.148-1.751-.864-2.022-.963-.271-.099-.469-.148-.667.148-.198.296-.766.963-.939 1.161-.173.198-.346.222-.642.074-.296-.148-1.248-.46-2.377-1.467-.879-.784-1.472-1.752-1.645-2.048-.173-.296-.018-.456.13-.604.134-.133.296-.346.444-.519.148-.173.198-.296.296-.494.099-.198.05-.371-.025-.519-.074-.148-.667-1.606-.914-2.2-.24-.577-.485-.5-.667-.51l-.568-.01c-.198 0-.519.074-.79.371-.271.296-1.037 1.013-1.037 2.472s1.062 2.867 1.21 3.065c.148.198 2.09 3.19 5.062 4.474.708.306 1.26.489 1.69.626.71.226 1.356.194 1.867.118.57-.085 1.751-.716 1.998-1.407.247-.692.247-1.284.173-1.407-.074-.123-.271-.198-.568-.346z"/>
+
       </svg>
+
     </button>
 
-    <div class="whatsapp-options" id="whatsappOptions">
-      <p>Fale com a Ayah</p>
 
-      <a href="https://wa.me/5516997913175" target="_blank">
+    <div class="whatsapp-options" id="whatsappOptions">
+
+      <p>
+        Fale com a Ayah
+      </p>
+
+
+      <a
+        href="https://wa.me/5516997913175"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         WhatsApp Juliana
-        </a>
-      <a href="https://wa.me/5516997170971" target="_blank">
+        <span class="arrow"></span>
+      </a>
+
+
+      <a
+        href="https://wa.me/5516997170971"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         WhatsApp Ana Julia
-        </a>
-        <span>↗</span>
+        <span class="arrow"></span>
       </a>
 
     </div>
 
   </div>
 
+
   <script src="JS/script.js"></script>
 
 </body>
-
 </html>
+
