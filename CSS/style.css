@@ -1331,3 +1331,19 @@ section {
 .whatsapp-options a:hover {
   color: hwb(107 13% 25%);
 }
+
+
+/* =====================================================
+   SETAS — evita que o celular transforme em emoji
+===================================================== */
+
+.service b,
+.contact-card a span,
+.btn span,
+.header-cta span,
+.whatsapp-options a span {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-variant-emoji: text;
+  font-style: normal;
+  line-height: 1;
+}
